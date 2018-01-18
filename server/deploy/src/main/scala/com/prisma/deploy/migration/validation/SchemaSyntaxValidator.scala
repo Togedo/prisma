@@ -139,8 +139,8 @@ case class SchemaSyntaxValidator(schema: String, directiveRequirements: Seq[Dire
       case fieldAndType if !isSelfRelation(fieldAndType) && relationCount(fieldAndType) != 2 =>
         Left(SchemaErrors.relationNameMustAppear2Times(fieldAndType))
 
-      case fieldAndType if isSelfRelation(fieldAndType) && relationCount(fieldAndType) != 1 && relationCount(fieldAndType) != 2 =>
-        Left(SchemaErrors.selfRelationMustAppearOneOrTwoTimes(fieldAndType))
+//       case fieldAndType if isSelfRelation(fieldAndType) && relationCount(fieldAndType) != 1 && relationCount(fieldAndType) != 2 =>
+//         Left(SchemaErrors.selfRelationMustAppearOneOrTwoTimes(fieldAndType))
 
       case fieldAndType =>
         Right(fieldAndType)
