@@ -1,6 +1,6 @@
 {
   "name": "prismaa",
-  "version": "1.0.0"
+  "version": "1.0.0",
   "dependencies": {
     "docs-cli": "^1.0.25",
     "global": "^4.3.2"
